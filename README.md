@@ -1,0 +1,1 @@
+It is a replica of google homepage but without any functionality.
