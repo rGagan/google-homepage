@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Google</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
         <header>
-            <ul  class="footerLeft">
-                <li><a href="">Gmail</a></li>
-                <li><a href="">Images</a></li>
-                <li><a href=""><i class="fa fa-th"></i></a></li>
-                <li><a href="">Sign in</a></li>
+            <ul  class="header">
+                <li class="headerList"><a href="">Gmail</a></li>
+                <li class="headerList"><a href="">Images</a></li>
+                <li class="headerList"><a id="moreApps" href=""><i class="fa fa-th"></i></a></li>
+                <li class="headerList"><a id="signIn" href="">Sign in</a></li>
               </ul> 
         </header>
-        <div>
-            <img class="googleimg" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" width="272" height="92"/>
-
-            <form>
-                <label for="search"><input id="search" type="text" name="search" value=""><i class="fa fa-search"></i></label></i>
-                <label for="submit"><input id="submit" type="button" name="submit" value="Google search"></label>
-                <label for="lucky"><input id="lucky" type="button" name="lucky" value="I'm Feeling Lucky"></label>
+        <div class="logo">
+            <img class="GoogleImg" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" width="272" height="92"/>
+        </div>
+        <div class="Search">
+            <form class="SearchForm">
+                <div>
+                    <div class="searchBox">
+                        <i id="iconSearch" class="fa fa-search"></i>
+                        <label class="searchInput" for="search"><input id="search" type="text" name="search" value=""></label></i>
+                        <img class="mic" src="https://web.archive.org/web/20191130234759im_/https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png" width="24" height="24"/>
+                    </div>
+                    <label class="searchButtons" for="submit"><input id="submit" type="button" name="submit" value="Google Search"></label>
+                    <label class="searchButtons" for="lucky"><input id="lucky" type="button" name="lucky" value="I'm Feeling Lucky"></label>
+                </div>
             </form>
             
         </div>
 
         <footer>
-            <ul  class="footerLeft">
-                <li><a href="">About</a></li>
-                <li><a href="">Advertizing</a></li>
-                <li><a href="">Business</a></li>
-                <li><a href="">How things work</a></li>
-              </ul> 
-
-            <ul  class="footerRight">
-                <li><a href="">Privacy</a></li>
-                <li><a href="">Terms</a></li>
-                <li><a href="">Settings</a></li>
-              </ul> 
+            <ul >
+                <li class="footerLeft"><a href="">About</a></li>
+                <li class="footerLeft"><a href="">Advertizing</a></li>
+                <li class="footerLeft"><a href="">Business</a></li>
+                <li class="footerLeft"><a href="">How things work</a></li>
+                <li class="footerRight"><a href="">Privacy</a></li>
+                <li class="footerRight"><a href="">Terms</a></li>
+                <li class="footerRight"><a href="">Settings</a></li>
+            </ul> 
         </footer>
     </body>
 
